@@ -1,0 +1,1126 @@
+
+@charset "UTF-8";
+
+
+figure, article, footer, header, nav, aside, figcaption, hgroup, section, summary {
+	display: block;
+	}
+
+@font-face {
+	font-family: 'ubuntu';
+	src: url('../ubuntu-font-family/ubuntu-l.ttf')
+	}
+	
+@viewport {
+	width: device-width;
+	}
+
+header,.a_home:active {
+	outline: none;
+}	
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	width: device-width;
+	background: url('../image/backgrounds/al2.jpg') no-repeat center top ;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	font-family: 'ubuntu'; 
+	text-decoration: none;
+	font-size: 87,5%;
+	color: white;
+	overflow-x: hidden;
+	}
+
+/*default articel*/	
+article {
+	width: 100%;
+	}
+	
+	/*kontener podstawowej zawartości na każdej stronie */
+#content_container {
+	width: 80%;
+	margin:0 auto 0 auto;
+	clear: both;
+	}
+
+/*default active*/	
+a:active {
+	outline: solid white;
+	
+}
+	
+	
+br {
+	width: auto;
+	height: 50%;
+	}
+
+	
+	/*hyperlinks defoult*/
+a {
+	text-decoration: none;
+	color: white;
+	}
+
+	/*fonts default*/
+h1 {
+	font-size: 180%;
+	
+}
+
+h2 {
+	font-size: 75%;
+	font-weight: normal;
+}	
+		
+	
+	/*global footer*/
+footer {
+	width: 101%;
+	height: 2em;
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: 0 auto 0 auto;
+	padding: 1em 1em 1em 1em;
+	display: block;
+	background: -moz-linear-gradient(top, rgba(114,114,114,1) 0%, rgba(84,84,84,0.91) 50%, rgba(51,51,51,0.82) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(114,114,114,1)), color-stop(50%,rgba(84,84,84,0.91)), color-stop(100%,rgba(51,51,51,0.82))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(114,114,114,1) 0%,rgba(84,84,84,0.91) 50%,rgba(51,51,51,0.82) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(114,114,114,1) 0%,rgba(84,84,84,0.91) 50%,rgba(51,51,51,0.82) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(114,114,114,1) 0%,rgba(84,84,84,0.91) 50%,rgba(51,51,51,0.82) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(114,114,114,1) 0%,rgba(84,84,84,0.91) 50%,rgba(51,51,51,0.82) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#d1333333',GradientType=0 ); /* IE6-9 */	
+	font-size: 1em;
+	box-shadow: 0px 0px 0px 1px #888888;
+	position: relative;
+	clear: both;
+	}
+	
+/*footer elements */
+#copyright {
+	margin-top: -0.8em;
+	float: left;
+	font-size: 1.04em
+	
+	}	
+#contact {
+	float: right;
+	}
+	
+#footer_container {
+	width: 90%;
+	margin: 0 auto;
+	line-height: 1.8em;
+	}
+	
+p.small {
+	font-size: 0.95em;
+	margin: 0 auto;
+		}
+
+/*main menu*/
+
+nav.menu_bar {
+	margin: o auto;
+	height: 3em;
+	background: rgb(76,76,76); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 0%, rgba(30,30,30,1) 10%, rgba(0,0,0,1) 50%, rgba(28,28,28,1) 100%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(0%,rgba(0,0,0,1)), color-stop(10%,rgba(30,30,30,1)), color-stop(50%,rgba(0,0,0,1)), color-stop(100%,rgba(28,28,28,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(30,30,30,1) 10%,rgba(0,0,0,1) 50%,rgba(28,28,28,1) 100%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(30,30,30,1) 10%,rgba(0,0,0,1) 50%,rgba(28,28,28,1) 100%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(30,30,30,1) 10%,rgba(0,0,0,1) 50%,rgba(28,28,28,1) 100%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(30,30,30,1) 10%,rgba(0,0,0,1) 50%,rgba(28,28,28,1) 100%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	
+	
+	}
+
+
+/*main menu*/
+
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+
+.menu_bar:before,
+.menu_bar:after {
+    content:"";
+    display:table;
+}
+.menu_bar:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.menu_bar {
+    zoom:1;
+}
+/*horizontal menu styles*/
+	
+	
+	/*main meny hyperlinks style */
+li a {
+	display: block;
+	line-height: 2em;
+	padding: 0 1em;
+	text-decoration: none;
+	color: white;
+	text-transform: capitalize;
+	}
+	
+	/*highlight the selected item*/
+.selected{
+	margin: 0 auto;
+	background: white;
+	color: black;
+	height: 2.1em;
+	padding-top: .23em;
+	padding-bottom: .27em;
+	position: relative;
+	top: -.28em;
+	border-radius: .18em ;
+	cursor: default ;
+}
+	
+nav a:active {
+	outline: none;
+	
+}
+	
+li a:hover {
+	background: white;
+	color: black;
+	height: 2.1em;
+	padding-top: .23em;
+	padding-bottom: .27em;
+	position: relative;
+	top: -.28em;
+	border-radius: .18em ;	
+	transition: all 0.1s;
+	opacity: 0.95;
+	}	
+
+.nav_li { margin: 0 auto;}
+
+/*ul,li default*/
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+
+ul {
+	height: 2em;
+	width: 100%;
+	margin-left: 10%;
+	font-size: 130% ;
+	}
+
+
+	
+/*global header*/	
+
+
+hgroup.home_header {
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: 0 auto 0 auto;
+	padding: 0.8em 2em 1px 2em;
+	text-align: left;
+	line-height: 1em;
+	letter-spacing: 0.25em;
+	background: -moz-linear-gradient(top, rgba(114,114,114,1) 0%, rgba(84,84,84,0.91) 50%, rgba(51,51,51,0.82) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(114,114,114,1)), color-stop(50%,rgba(84,84,84,0.91)), color-stop(100%,rgba(51,51,51,0.82))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(114,114,114,1) 0%,rgba(84,84,84,0.91) 50%,rgba(51,51,51,0.82) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(114,114,114,1) 0%,rgba(84,84,84,0.91) 50%,rgba(51,51,51,0.82) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(114,114,114,1) 0%,rgba(84,84,84,0.91) 50%,rgba(51,51,51,0.82) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(114,114,114,1) 0%,rgba(84,84,84,0.91) 50%,rgba(51,51,51,0.82) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#d1333333',GradientType=0 ); /* IE6-9 */	
+	width: 98.76%;
+	height: auto;
+	display: block;
+	}
+	
+/*header text color: guitar player composer...*/	
+
+span.marcin_home {
+	color: #8A8AB5;
+	}
+	
+	
+/*home*/
+	
+.buttons_home {
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: 0 auto 0 auto;
+	width: 20%;
+	height: auto;
+	padding: 0 1em 2px 1em;
+	}
+
+.buttons_home a:hover {
+	transition: all 0.2s;
+	opacity: 0.9;
+	cursor: pointer;
+	}
+	
+div.buttons_home {
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: 0 auto ;
+	float: right;
+	width: 20%;
+	height: auto;
+	padding: 1.5em 1em 1em 1em;
+	text-align: right;	
+	}
+
+/*home*/
+img.picture_home {
+	width: 100%;
+	height: auto;
+	margin: 0 auto 0 auto;
+	border-radius: 5px;
+	border: transparent;
+	box-shadow: 5px 5px 20px 1px #888888;
+	}
+	
+figure.picture_home {
+	width: 80%;
+	height: auto;
+	margin: 0 auto 0 auto;
+	padding: 1em 1em 1em 1em;
+	border-radius: 20px;
+	border: transparent;
+	}
+
+
+
+	.home_wrapper {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin:0 auto 0 auto;
+	opacity:1;
+	
+	}
+	
+
+	
+	/*gallery site*/	
+	
+div.gallery_wrapper {
+	
+	margin: 1.5em auto 1.5em auto;
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	border-radius: 5px;
+	position: relative;
+	display: block;
+	
+	
+}	
+	
+#img1, #img2, #img3, #img4, #img5, #img6 {
+	margin: 0 auto;
+	padding: 1em 1em 1em 1em;
+	width: 30%;
+	border-radius: 20px;
+
+	}
+
+	
+.img_gallery:hover {	
+	transition: all 0.1s;
+	opacity: 0.7;
+	cursor: pointer;
+	}	
+	
+/*music site*/	
+
+/*discography gallery*/
+#dis1, #dis2, #dis3, #dis4, #dis5 {
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin:0 auto 0 auto;
+	padding: 1em 1em 1em 1em;
+	width: 20%;
+	height: auto;
+	position: relative;
+	}
+
+
+.img_dis:hover {	
+	transition: all 0.1s;
+	opacity: 0.6;
+	cursor: pointer;
+	}	
+
+	
+/*soundcloud playlists*/	
+.playlist1, .playlist2 {
+	width: 26.5em;
+	height: 22.5em;	
+	}
+	
+
+
+	/*plalists headers*/
+h2.h2_black {
+	color: #0F0F0F;
+	font-size: 150%;
+	letter-spacing: 3px;
+	font-weight: bold;
+		}
+		
+	#music_wrapper {
+	padding: 1px 1em 1em 1em;
+	width: 100%;
+	height: 50%;
+	/*top right bottom left*/
+	margin: 0 auto 0 auto;
+	}
+		
+	aside.music_container {
+	padding: 1px 1em 1em 1em;
+	width: 100%;
+	height: 50%;
+	/*top right bottom left*/
+	margin: 0 auto 0 auto;
+	clear: both;
+	}
+
+	#music_all  {
+	
+	width: 100%;
+	height: 100%;
+	
+	}
+	
+	figure.moje_kompozycje {
+	width: 47%;
+	height: auto;
+	color: black;
+	padding: 1em 0.2em 1em 1em;
+	float: left;
+	margin:0 auto 0 auto;	
+	}
+	
+	figure.nagrania_gitarowe {
+	width: 47%;
+	height: auto;
+	color: black;
+	padding: 1em 1em 1em 0.2em;
+	margin: 0;
+	float: right;
+	margin:0 auto 0 auto;	
+	}
+	
+		
+/*bio site*/
+
+
+/*picture*/
+img.img_bio {
+	width: 100%;
+	height: auto;
+	box-shadow: 5px 5px 20px 1px #888888;
+	border-radius: 5px;
+	}
+
+figure.figure_bio  {
+	width: 45.5%;
+	height:auto;
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: 0 auto 0 auto;
+	float: right;
+	padding: 1em 1em 1em 0.8em;
+	top: 1em;
+	}
+
+/*left side table*/	
+table.table_bio {
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: 0 auto 0 auto;
+	width: 50.5%;
+	height: auto;
+	border: transparent;
+	border-radius: 5px;
+	padding: 1em 0.8em 1em 1em;
+	float: left;
+	}
+	
+td.td_bio {
+	/*TOP RIGHT BOTTOM LEFT*/
+	
+	margin:0 auto 0 auto;
+	text-align: left;
+	padding: 1em 1em 1em 1em;
+	letter-spacing: 1px;
+	line-height: 1.85em;
+	background-color: #3E3F3F;
+	border-radius: 8px;
+	box-shadow: 5px 5px 20px 1px #888888;
+	}
+
+/* upper site bio wrappers*/	
+	#bio_wrapper {
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	height: auto;
+	/*top right bottom left*/
+	margin: 0 auto 0 auto;
+	}
+/* under site bio wrappers*/	
+aside.bio_wrapper_under {
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	height: auto;
+	/*top right bottom left*/
+	margin: 0 auto 0 auto;
+	color: black;
+	}
+aside.laureat {
+	padding: 0 1em 0 1em;
+	margin: 0 auto 0 auto;
+	color: #181A1A;
+	font-size: 90%;
+	}
+	
+/*bio*/
+ul.ul_bio {
+	width: 90%;
+	height: auto;
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin:0 auto 1em 2.2em;
+	padding: 0.1em 1em 0.1em 1em;
+	background-color: #F4F4F4;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 150px 80px;
+	border-bottom-left-radius: 40px 90px;
+	border-bottom-right-radius: 5px 5px;
+	height:50%;
+	box-shadow: 5px 5px 20px 1px #888888;
+	clear: both;
+	font-size: 100%;
+	list-style-type: disc;
+	}
+/*bio*/	
+li.li_bio {
+	width: 90%;
+	height: auto;
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: 0 auto 0 2em;
+	color: black;
+	line-height: 2em;
+	letter-spacing: 1px;
+	padding: 0 1em 0 1em;
+	font-size: 100%;
+	list-style-type: disc;
+	}
+
+.td_lessons a:hover {
+	transition: all 0.2s;
+	opacity: 0.8;
+	}
+
+/*lesson site*/	
+
+img.button_lesson {
+	width: 40%;
+	height: 40%;
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: -8% auto -5% auto;
+	border-radius: 5px;
+	}
+
+img.img_lesson {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	border: transparent;
+	box-shadow: 5px 5px 20px 1px #888888;
+	}
+	
+figure.figure_lesson {
+	width: 45%;
+	padding: 1em auto 1em auto;
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin:0 auto 0 auto;
+	float: left;
+	}
+
+	/*wyróżniony tekst "gdzie uczę..."*/
+mark.mark_lesson {
+	background-color: #F4F4F4;
+	color: black;
+	border-radius: 3px;
+	}
+
+	
+
+/*lessons 1st text box*/	
+div.lessons_right {
+	float: right;
+	height: auto;
+	width: 50%;
+	padding: 0.1em 1em 0.1em 1em;
+	text-align: justify;
+	color: #3E3F3F;
+	border: transparent;
+	line-height: 20px;
+	background-color: white;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 30px 30px;
+	border-bottom-left-radius: 30px 70px;
+	border-bottom-right-radius: 5px 5px;
+	box-shadow: 5px 5px 20px 1px #888888;
+	
+	}
+	
+	
+/*lesson table*/	
+
+table.table_lesson_under {
+	
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: -2% auto 0 -1%;
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	height: auto;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	border: transparent;
+	}	
+td.td_lessons {
+	padding: 1em 1em 1em 1em;
+	text-align: justify;
+	border-radius: 5px;
+	width: 50%;
+	height: auto;
+	background-color: #3E3F3F;
+	line-height: 25px;
+	box-shadow: 5px 5px 20px 1px #888888;
+	}
+
+
+/*lesson header*/	
+header.class_header {
+	margin: -2.5% auto 0 auto;
+	font-size: 90%;
+	letter-spacing: 5px;
+	width: 90%;
+	height:auto;
+	color: #0F0F0F;
+	}	
+
+	#lesson_wrapper_up {
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	height: auto;
+	/*top right bottom left*/
+	margin: 0 auto 0 auto;
+	}
+	
+aside.lesson_wrapper_under {
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	height: auto;
+	/*top right bottom left*/
+	margin: 0 auto 0 auto;
+	clear: both;
+	}
+	
+	
+/*video page*/
+
+/*main table video*/
+.table_video {
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin:0 auto 0 -1%;
+	padding: 1em 1em 1em 1em;
+	border: 10%;
+	width: 100%;
+	height: auto;
+	}
+
+
+	/*video footer "więcej na moim kanale youtube" */
+table.table_video_f {
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: -5% auto 0 auto;
+	padding: 1em 1em 1em 1em;
+	border: 10%;
+	text-align: center;
+	width: 90%;
+	height: auto;
+	}
+	/*video footer "więcej na moim kanale youtube" */
+td.td_video_f {
+	width: 50%;
+	border: 10% transparent;
+	padding: 1em 1em 1em 1em;
+	text-align: center;
+	height: auto;
+	}	
+
+.video_footer {
+
+	font-weight: normal;
+	color: black;
+	}
+	
+	
+/*video style class*/
+.video {
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin:0 auto 0 auto;
+	padding: 1em 1em 1em 1em;
+	width: 29%;
+	height: 13em;
+	}
+	
+
+
+img.button_video {
+	width: 50%;
+	height: auto;
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin: o auto o auto;
+	float: center;
+	padding: 1em 1em 1em 1em;
+	border-radius: 40px;
+	}
+
+.td_video_f  a:hover {
+	transition: 0.2s;
+	opacity: 0.7;
+	}
+	
+/*video wrapper*/	
+	#wrapper_video {	
+    width: 96%;
+	height: auto;
+	margin: 1em auto 1em auto;
+	/*TOP RIGHT BOTTOM LEFT*/
+	padding: 1em 1em 1em 1em;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	border: transparent;
+	box-shadow: 5px 5px 20px 1px #888888;
+	}
+
+
+
+/*contact site*/
+
+	#wrapper_contact {
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	height: 33em;
+	/*top right bottom left*/
+	margin: 0 auto ;
+	}
+
+	/* text box with all contact info and contact form*/
+	
+.contact1 {
+	height: auto;
+	border: transparent;
+	border-radius: 5px;
+	padding: 1em 1em 1em 1em;
+	width: 40%;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	letter-spacing: 1px;
+	background-color: #3E3F3F;
+	border-radius: 8px;
+	box-shadow: 5px 5px 20px 1px #888888;
+	/*top right bottom left*/
+	float: left;
+	margin: 1em auto 0.7em auto;
+	}
+	
+ /*contact form php*/
+form {
+	text-align: center;
+	}
+
+.contact1 input, .contact1 textarea {
+	
+	width: 90%;
+	
+	font-size: 1em;
+	margin: 0 auto;
+	border: 2px solid #ccc;
+	
+}
+
+.contact1 textarea {
+	height: 7em;
+}
+
+.contact1 textarea:focus, .contact1 input:focus {
+	border: 2px solid #900;
+}
+
+.contact1 input.submit-button {
+	width: 100px;
+	float: right;
+	cursor: pointer;
+}
+
+
+
+label {
+	text-align: left;
+	float: left;
+	width: 90%;
+	padding-top: 0.1em;
+	font-size: 0.8em;
+	margin: 0 auto 0 1em;
+}
+
+/*confirm site after form submit*/
+.thank_you {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #3E3F3F;
+	border-radius: 8px;
+	box-shadow: 5px 5px 20px 1px #888888;
+	clear: both;
+	padding: 0em 1em 1em 1em;
+	height: 25em;
+	}
+	
+.thank_h1 {
+	padding: 4em 1em 0em 4em;
+	}
+
+img.img_contact {
+	width: 100%;
+	box-shadow: 5px 5px 20px 1px #888888;
+	border-radius: 5px;
+	}	
+	
+figure.figure_contact {
+	width: 50%;
+	padding: 1em 1em 1em 1em;
+	/*TOP RIGHT BOTTOM LEFT*/
+	margin:0 auto 0 auto;
+	float: right;
+	}
+
+
+		/*RESPONSIVE WEB DESIGN MEDIA QUERIES*/
+
+
+	
+				/*tablet*/
+
+		
+	@media screen and (min-width: 691px) and (max-width: 1068px)
+
+	
+	{
+	
+	body {font-size: 75%; margin: 0 auto; }
+	video.playlist {width: 70%;}
+	td.td_bio { line-height: 2.25em;}
+	.gallery_wrapper {width: 100%;}
+	#img1, #img2, #img3, #img4, #img5, #img6 {
+	width: 28%;
+	margin: 0 auto;}
+	}
+	
+	
+	
+
+
+				/*phone 640px*/
+				
+				
+				
+	@media screen and (min-width: 400px) and  (max-width: 690px) 
+	
+	{
+	
+	/*main and home*/
+	article {width: 80%;}
+	.content_container {width: 460px; margin: 0 auto;}
+	body {font-size: 60%; width: 460px; width: 95%; margin: 0 auto;}
+	hgroup.home_header {height: 8em; text-align: left; padding: 1em 0 1em 1em;
+	border-radius: 5px; width: 98%; margin: 0 auto;
+	font-size: 130%;
+	}
+	nav.menu_bar {height: 3em ;word-spacing: 1em; padding: 1em 0 1em 0; 
+	margin: 0 auto;	font-size: 150%; border-radius: 5px; width: 100%;}
+	li a {padding: 0 0.5em 0.5em 0;}
+	ul {margin-left: 3%; height: 3em; font-size: 130%}
+	
+	/*footer*/
+	div#copyright {font-size: 120%; text-align: center; width: 380px; clear: both; padding: 1em; margin: 0 auto;}
+	div#contact {font-size: 120%; text-align: center; width: 380px; clear: both; padding: 1em; margin: 0 auto;}
+	footer {height: 9em; border-radius: 5px;width: 100%;}
+	
+	nav.buttons_home {padding: 0; margin:0 10% 0 0;}
+	.buttons_home {margin: 0 ;padding: 0; width: 5em; height: 5em;
+	}
+	
+	figure.picture_home {width: 130%;height: 100%;margin: 5% 0 10% 0;
+	padding: 2em 0 2em 0;border-radius: 0px; border: transparent; border-radius: 5px;}
+	img.picture_home {border-radius: 0px;border: transparent; border-radius: 5px;}
+	
+	/*gallery*/
+	.gallery_wrapper { width: 460px; }
+	#img1, #img2, #img3, #img4, #img5, #img6 {
+	width: 100%;
+	margin: 0 auto;}
+	
+	
+	/*bio*/
+	figure.figure_bio {padding: 1em 3em 1em 0; width: 400px; 
+	margin:0 auto 0 -3%; float: none; }
+	img.img_bio {border-radius: 0px; border-radius: 5px;width: 100%;}
+	
+	div#bio_wrapper {width: 440px; margin: 0 auto; width: 100%;}
+	
+	table.table_bio {padding: 1em 3em 1em 0.4em; width: 440px;
+	 margin:0 auto 0 -10%; float: none; font-size: 130%;} 
+	
+	div#header_bio1_wrapper {padding: 1em 3em 1em 0; width: 300px; 
+	width: 100%;height: 100%; margin:0 auto 0 -5%; clear: both;} 
+	
+	div#bio_wrapper {padding: 1em 3em 1em 0; width: 440px; 
+	width: 100%;height: 100%; margin:0 auto 0 -5%; clear: both;} 
+	
+	aside.bio_wrapper_under {padding: 0;}
+	ul.ul_bio {width: 440px; width: 140%;height: auto; margin-left: -12%;
+	font-size: 130%;
+	}
+	/*music*/
+	figure.moje_kompozycje {clear: left; padding: 0; width: 440px; margin-left: -9%; }
+	figure.nagrania_gitarowe { padding: 0; text-align: left; clear: both; width: 440px; margin-right: 10%; }
+	.playlist1 { width: 420px;}
+	.playlist2 {width: 420px;}
+	div#music_wrapper {width: 440px; }
+	div#music_all  {width: 440px; }
+	aside.music_container {width: 440px; margin-left: -8%; }
+	/*lesson*/
+	#lesson_wrapper_up {width:440px ; float: none;  margin:0 auto }
+	aside.lesson_wrapper_under {width:440px ; float: none;  margin:0 auto }
+	figure.figure_lesson {width:440px ; float: none;  margin:0 auto 0 -8%;}
+	img.img_lesson { box-shadow: 0 0 0 0; border-radius: 5px;width: 95%; margin: 0 auto;}
+	div.lessons_right {width:440px ; float: none;  margin:0 auto 0 -10%;
+	font-size: 130%;
+	}
+	table.table_lesson_under {width:440px;  margin:0 auto 0 -10%;
+	font-size: 130%;
+	}
+	header.class_header {letter-spacing: 0; width: 100%; padding: 0;  margin:0 auto 0 -10%; font-size: 90%;}
+	table.table_lesson_under {width:460px ; float: none; padding: 0;  margin:0 auto 0 -10%; }
+	td.td_lessons  {letter-spacing: 0; line-height: 1.7em;}
+	div.lessons_right {width:440px ; width: 90%;}
+	
+	/*video*/
+	div#wrapper_video {width: 440px; padding: 0; margin:1em auto 0 -12%;}
+	img.button_video {width: 110%; padding: 0 0 0 0;}
+	div.video_footer { padding: 0; letter-spacing: 1px; margin: 0 0 0 -10%;}
+	.video {width: 80%; height: 100%; margin: 0 auto;}
+	
+	/*kontakt*/
+	div#wrapper_contact {width: 460px; padding: 0; height: auto;}
+	figure.figure_contact {display: none;}
+	.contact1 {width: 440px; padding: 0; float: none; margin: 0 auto 0 -1.9em; text-align: center;width: 90%;}
+	}
+	
+
+	
+	
+		/*phone 320px*/
+		
+
+	@media screen and (min-width: 241px) and  (max-width: 399px) 
+	
+	
+	{
+	/*main and home*/
+	article {width: 80%;}
+	.content_container {width: 320px; margin: 0 auto;}
+	body {font-size: 60%; width: 320px; width: 95%; margin: 0 auto;}
+	#gall {display: none;}
+	hgroup.home_header h1 {font-size: 140%; letter-spacing: o;}
+	hgroup.home_header {height: 10em; padding: 1em 1em 1em 1.3em; 
+	border-radius: 5px; font-size: 110%; line-height: 1.5em;}
+	nav.menu_bar {height: 3em ; 
+	padding: 1em 0 1em 0; border-radius: 5px;}
+	li a {padding: 0 0.5em 0.5em 0;}
+	ul {margin-left: 0.1em; height: 3em;  font-size: 132%;}
+	
+	div#copyright {font-size: 110%; text-align: center; width: 280px; clear: both; padding: 1em; margin: 0 auto;}
+	div#contact {font-size: 110%; text-align: center; width: 280px; clear: both; padding: 1em; margin: 0 -10% 0 0;}
+	footer {height: 9em; border-radius: 5px;width: 100%;}
+	
+	nav.buttons_home {padding: 0; margin:0 1em 0 -1em;}
+	.buttons_home {margin: 0 ;padding: 0; width: 4.5em; height: 4.5em;}
+	
+	figure.picture_home {width: 130%;height: 100%;margin: 5% 0 10% 0;padding: 2em 0 2em 0;border-radius: 0px;border: transparent;}
+	img.picture_home {border-radius: 0px;border: transparent; border-radius: 5px;}
+	
+	/*gallery*/
+	.gallery_wrapper { width: 320px; }
+	#img1, #img2, #img3, #img4, #img5, #img6 {
+	width: 100%;
+	margin: 0 auto;}
+	
+	
+	/*bio*/
+	figure.figure_bio {padding: 1em 3em 1em 0; margin:0 auto 0 -10%; float: none;}
+	img.img_bio {border-radius: 0px; width: 290px; border-radius: 5px;}
+	
+	div#bio_wrapper {width: 320px; margin: 0 auto;}
+	
+	table.table_bio {padding: 1em 3em 1em 0.4em; width: 320px; 
+	 margin:0 auto 0 -10%; float: none;
+	 font-size: 105%;
+	 } 
+	div#header_bio1_wrapper {padding: 1em 3em 1em 0; width: 300px; 
+	width: 100%;height: 100%; margin:0 auto 0 -5%; clear: both;} 
+	
+	div#bio_wrapper {padding: 1em 3em 1em 0; width: 300px; 
+	width: 100%;height: 100%; margin:0 auto 0 -5%; clear: both;} 
+	
+	aside.bio_wrapper_under {padding: 0;}
+	ul.ul_bio {width: 300px; width: 140%;height: auto; margin-left: -9%;
+	 font-size: 105%;
+	}
+	
+	/*music*/
+	figure.moje_kompozycje {clear: left; padding: 0; width: 300px; margin-left: -9%; }
+	figure.nagrania_gitarowe { padding: 0; text-align: left; clear: both; width: 300px; margin-right: 10%; }
+	.playlist1 { width: 280px;}
+	.playlist2 {width: 280px;}
+	div#music_wrapper {width: 300px; }
+	div#music_all  {width: 300px; }
+	
+	/*lesson*/
+	#lesson_wrapper_up {width:300px ; float: none;  margin:0 auto }
+	aside.lesson_wrapper_under {width:300px ; float: none;  margin:0 auto }
+	figure.figure_lesson {width:300px ; float: none;  margin:0 auto 0 -10%;}
+	img.img_lesson { box-shadow: 0 0 0 0;}
+	div.lessons_right {width:300px ; float: none;  margin: .5em auto 0 -10%;
+	font-size: 110%;
+	}
+	table.table_lesson_under {width:300px;  margin:0 auto 0 -10%;
+	font-size: 110%;
+	}
+	header.class_header {letter-spacing: 0; width: 100%; padding: 0;  margin:0 auto 0 -10%; font-size: 90%;}
+	table.table_lesson_under {width:320px ; float: none; padding: 0;  margin:0 auto 0 -10%; }
+	td.td_lessons  {letter-spacing: 0; line-height: 1.7em;}
+	div.lessons_right {width:300px ; width: 90%;}
+	
+	
+	/*video*/
+	div#wrapper_video {width: 290px; padding: 0; margin:1em auto 0 -12%;}
+	img.button_video {width: 130%; padding: 0 0 0 0;}
+	div.video_footer { padding: 0; letter-spacing: 1px; margin: 0 0 0 -10%;}
+	.video {width: 80%; height: 100%; margin: 0 auto;}
+	
+	/*kontakt*/
+	div#wrapper_contact {width: 320px; padding: 0; height: auto;}
+	figure.figure_contact {display: none;}
+	.contact1 {width: 300px; padding: 0; float: none; margin: 0 auto 0 -1.9em; text-align: center;}
+	
+	}
+	
+	
+	
+
+	/*phone 240px*/
+	
+
+	@media screen and (min-width: 10px) and  (max-width: 240px)
+	
+	{
+	/*main and home*/
+	article {width: 80%;}
+	.content_container {width: 240px; margin: 0 auto;}
+	body {font-size: 50%; width: 240px; width: 90%; margin: 0 auto;}
+	span.marcin_home {margin-top: -10em;}
+	#gall {display: none;}
+	hgroup.home_header h1 {font-size: 130%; letter-spacing: o;}
+	hgroup.home_header {height: 10em; padding: 1em 1em 1em 1.3em; 
+	border-radius: 5px; font-size: 110%; line-height: 1.5em;}
+	nav.menu_bar {width: 230px; margin: 0 auto; height: 3em ; padding: 0; border-radius: 5px;}
+	li a {padding: 0 0.4em 0 0.1em;}
+	ul {margin-left: 0.1em; height: 3em;  font-size: 122%;}
+	
+	div#copyright {font-size: 110%; text-align: center; width: 200px; clear: both; padding: 1em; margin: 0 auto;}
+	div#contact {font-size: 110%; text-align: center; width: 200px; clear: both; padding: 1em; margin: 0 -10% 0 0;}
+	footer {height: 9em; border-radius: 5px;width: 100%;}
+	#footer_container {margin-top: -3%; margin-left: -3%;}
+	
+	nav.buttons_home {padding: 0; margin:0 1em 0 -1em;}
+	.buttons_home {margin: 0 ;padding: 0; width: 4.5em; height: 4.5em;}
+	figure.picture_home {width: 130%;height: 100%;margin: 5% 0 10% 0;padding: 2em 0 2em 0;border-radius: 0px;border: transparent;}
+	img.picture_home {border-radius: 0px;border: transparent; border-radius: 5px;}
+	
+	/*bio*/
+	figure.figure_bio {padding: 1em 3em 1em 0; margin:0 auto 0 -10%; float: none;}
+	img.img_bio {border-radius: 0px; width: 220px; border-radius: 5px;}
+	
+	div#bio_wrapper {width: 240px; margin: 0 auto;}
+	
+	table.table_bio {padding: 1em 3em 1em 0.4em; width: 240px;  
+	 margin:0 auto 0 -10%; float: none;
+	 font-size: 105%;
+	 } 
+	div#header_bio1_wrapper {padding: 1em 3em 1em 0; width: 220px; 
+	width: 100%;height: 100%; margin:0 auto 0 -5%; clear: both;} 
+	
+	div#bio_wrapper {padding: 1em 3em 1em 0; width: 220px; 
+	width: 100%;height: 100%; margin:0 auto 0 -5%; clear: both;} 
+	aside.bio_wrapper_under {padding: 0;}
+	ul.ul_bio {width: 220px; ; width: 140%;height: auto; margin-left: -9%;
+	 font-size: 105%;
+	}
+	/*music*/
+	figure.moje_kompozycje {clear: left; padding: 0; width: 180px; margin-left: -9%; }
+	figure.nagrania_gitarowe { padding: 0; text-align: left; clear: both; width: 180px; margin-right: 25%; }
+	.playlist1 { width: 180px;}
+	.playlist2 {width: 180px;}
+	div#music_wrapper {width: 220px; }
+	div#music_all  {width: 220px;  }
+	
+	/*lesson*/
+	#lesson_wrapper_up {width:220px;  float: none;  margin:0 auto }
+	aside.lesson_wrapper_under {width:220px;  float: none;  margin:0 auto }
+	figure.figure_lesson {width:220px;  float: none;  margin:0 auto 0 -10%;}
+	img.img_lesson { box-shadow: 0 0 0 0;}
+	div.lessons_right {width:240px;  ; float: none;  margin: .5em auto 0 -10%;
+	font-size: 110%;
+	}
+	table.table_lesson_under {width:220px;  margin:0 auto 0 -10%;
+	font-size: 110%;
+	}
+	header.class_header {letter-spacing: 0; width: 100%; padding: 0;  margin:0 auto 0 -10%; font-size: 90%;}
+	table.table_lesson_under {width:240px ; float: none; padding: 0;  margin:0 auto 0 -10%; }
+	td.td_lessons  {letter-spacing: 0; line-height: 1.7em;}
+	div.lessons_right {width:220px; width: 90%;}
+	
+	/*video*/
+	div#wrapper_video {width: 210px; padding: 0; margin:1em auto 0 -12%;}
+	img.button_video {width: 130%; padding: 0 0 0 0;}
+	div.video_footer { padding: 0; letter-spacing: 1px; margin: 0 0 0 -10%;}
+	.video {width: 80%; height: 100%; margin: 0 auto;}
+	
+	/*gallery*/
+	.gallery_wrapper { width: 220px; }
+	#img1, #img2, #img3, #img4, #img5, #img6 {
+	width: 140%;
+	padding: 0;
+	margin: 0 auto;}
+	
+	/*kontakt*/
+	div#wrapper_contact {width: 240px; padding: 0; height: auto;}
+	figure.figure_contact {display: none;}
+	.contact1 {width: 220px; padding: 0; float: none; margin: 0 auto 0 -1.9em; text-align: center;}
+}
